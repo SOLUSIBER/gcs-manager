@@ -14,8 +14,13 @@ source venv/bin/activate
 ```
 pip install google-cloud-storage
 ```
+4. Di file gcsmanager.py bisa disesuaikan variable dibawah ini
+```
+GCS_BUCKET_NAME = 'ganti-dengan-nama-bucket-anda'
+GCS_KEYFILE_PATH = 'ganti-dengan-path-keyfile-anda.json'
+```
 
-4. Jalankan script python
+5. Jalankan script python
 ```
 ubuntu@tuneful-glassfish:~$ python3 gcsmanager.py -h
 usage: gcs_tools.py [-h] {list,upload,download,rename} ...
